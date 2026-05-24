@@ -1,0 +1,37 @@
+SQL for Data Engineer – Complete Overview
+What is SQL?
+
+SQL (Structured Query Language) is used to communicate with databases.
+A Data Engineer uses SQL to:
+
+Extract data
+Transform data
+Load data (ETL/ELT)
+Create reports
+Optimize queries
+Manage large datasets
+
+Popular databases:
+
+MySQL
+PostgreSQL
+Microsoft SQL Server
+Oracle Database
+Snowflake
+Google BigQuery
+4 Major SQL Bits for Data Engineer
+Bit 1 — SQL Basics
+Important Commands
+Command	Purpose
+SELECT	Fetch data
+INSERT	Add data
+UPDATE	Modify data
+DELETE	Remove data
+WHERE	Filter records
+ORDER BY	Sort data
+GROUP BY	Group records
+Example
+SELECT name, salary
+FROM employees
+WHERE salary > 50000
+ORDER BY salary DESC;

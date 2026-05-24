@@ -1,0 +1,102 @@
+Interview Questions
+1. Difference between DELETE, DROP, and TRUNCATE?
+Command	Removes Data	Removes Table	Rollback Possible
+DELETE	Yes	No	Yes
+TRUNCATE	Yes	No	Limited
+DROP	Yes	Yes	No
+2. What is Primary Key?
+
+A Primary Key uniquely identifies each row in a table.
+
+Example:
+
+employee_id INT PRIMARY KEY
+3. What is Foreign Key?
+
+A Foreign Key connects two tables.
+
+Example:
+
+FOREIGN KEY (dept_id) REFERENCES department(id)
+Bit 2 — Joins & Relationships
+Types of Joins
+Join	Meaning
+INNER JOIN	Matching rows only
+LEFT JOIN	All left + matched right
+RIGHT JOIN	All right + matched left
+FULL JOIN	All records
+Example
+SELECT e.name, d.department_name
+FROM employees e
+INNER JOIN departments d
+ON e.dept_id = d.id;
+Interview Questions
+1. Difference between INNER JOIN and LEFT JOIN?
+INNER JOIN → only matching data
+LEFT JOIN → all left table data + matching right table data
+2. Self Join?
+
+A table joined with itself.
+
+Example:
+
+SELECT A.name, B.name
+FROM employee A, employee B
+WHERE A.manager_id = B.employee_id;
+3. What is Normalization?
+
+Normalization removes duplicate data and improves consistency.
+
+Forms:
+
+1NF
+2NF
+3NF
+Bit 3 — Advanced SQL for Data Engineering
+Window Functions
+
+Used for analytics without grouping rows.
+
+Example:
+
+SELECT name,
+salary,
+RANK() OVER(ORDER BY salary DESC) AS rank
+FROM employees;
+Common Table Expression (CTE)
+WITH high_salary AS (
+   SELECT * FROM employees
+   WHERE salary > 50000
+)
+SELECT * FROM high_salary;
+Interview Questions
+1. Difference between RANK() and DENSE_RANK()?
+RANK skips numbers
+DENSE_RANK does not skip numbers
+
+Example:
+
+100 → Rank 1
+100 → Rank 1
+90  → Rank 3
+2. What is Partition By?
+
+Used with window functions to divide data into groups.
+
+Example:
+
+SELECT department,
+AVG(salary) OVER(PARTITION BY department)
+FROM employees;
+3. What is a CTE?
+
+Temporary result set used to simplify queries.
+
+4. What are Indexes?
+
+Indexes improve query performance.
+
+Types:
+
+Clustered
+Non-clustered

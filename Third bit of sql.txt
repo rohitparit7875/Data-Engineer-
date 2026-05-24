@@ -1,0 +1,66 @@
+Bit 4 — Data Engineer Real-Time SQL
+ETL Related SQL
+
+Data Engineers mostly:
+
+Clean data
+Remove duplicates
+Aggregate data
+Create pipelines
+Find Duplicate Records
+SELECT name, COUNT(*)
+FROM employees
+GROUP BY name
+HAVING COUNT(*) > 1;
+Find Second Highest Salary
+SELECT MAX(salary)
+FROM employees
+WHERE salary <
+(
+   SELECT MAX(salary)
+   FROM employees
+);
+Remove Duplicate Rows
+DELETE FROM employees
+WHERE id NOT IN
+(
+   SELECT MIN(id)
+   FROM employees
+   GROUP BY name
+);
+Important SQL Interview Questions for Data Engineer
+Beginner Level
+What is SQL?
+Difference between WHERE and HAVING?
+What is GROUP BY?
+Explain Joins.
+What is NULL value?
+Difference between CHAR and VARCHAR?
+Intermediate Level
+Explain Window Functions.
+Difference between UNION and UNION ALL?
+What is Indexing?
+Explain Subqueries.
+What is a View?
+What is a Stored Procedure?
+Advanced Level
+How do you optimize slow SQL queries?
+Explain query execution plan.
+What is partitioning?
+Difference between OLTP and OLAP?
+How does BigQuery/Snowflake handle SQL differently?
+How would you process billions of records?
+Most Important SQL Topics for Data Engineer
+
+Priority order:
+
+Joins
+Window Functions
+CTE
+Aggregations
+Subqueries
+Indexing
+Query Optimization
+Partitioning
+Data Warehousing
+ETL Queries
