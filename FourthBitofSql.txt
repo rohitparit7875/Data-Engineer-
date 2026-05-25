@@ -24,5 +24,7 @@ This transition is very achievable for you because Data Engineering also require
 
 troubleshooting
 automation
+
+...
 infrastructure understanding
 cloud services knowledge

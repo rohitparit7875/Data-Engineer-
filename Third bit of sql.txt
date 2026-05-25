@@ -60,6 +60,9 @@ CTE
 Aggregations
 Subqueries
 Indexing
+
+..
+
 Query Optimization
 Partitioning
 Data Warehousing

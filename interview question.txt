@@ -98,5 +98,6 @@ Indexes improve query performance.
 
 Types:
 
+...
 Clustered
 Non-clustered

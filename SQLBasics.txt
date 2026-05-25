@@ -30,6 +30,8 @@ DELETE	Remove data
 WHERE	Filter records
 ORDER BY	Sort data
 GROUP BY	Group records
+
+...]
 Example
 SELECT name, salary
 FROM employees
