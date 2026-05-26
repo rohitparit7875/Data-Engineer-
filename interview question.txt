@@ -90,7 +90,9 @@ AVG(salary) OVER(PARTITION BY department)
 FROM employees;
 3. What is a CTE?
 
-Temporary result set used to simplify queries.
+Temporary result set used to simplify 
+
+..queries.
 
 4. What are Indexes?
 

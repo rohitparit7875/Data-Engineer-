@@ -56,6 +56,8 @@ Priority order:
 
 Joins
 Window Functions
+
+..
 CTE
 Aggregations
 Subqueries

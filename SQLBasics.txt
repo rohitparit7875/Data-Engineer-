@@ -22,6 +22,7 @@ Google BigQuery
 4 Major SQL Bits for Data Engineer
 Bit 1 — SQL Basics
 Important Commands
+>\
 Command	Purpose
 SELECT	Fetch data
 INSERT	Add data
