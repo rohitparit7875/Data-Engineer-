@@ -17,8 +17,7 @@ Advanced SQL
 Google BigQuery
 ETL concepts
 
->>
-
+>
 Python for data processing
 Data Warehousing
 Cloud data tools

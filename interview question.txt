@@ -83,8 +83,7 @@ Example:
 
 Used with window functions to divide data into groups.
 
-Example:
-
+Example
 SELECT department,
 AVG(salary) OVER(PARTITION BY department)
 FROM employees;

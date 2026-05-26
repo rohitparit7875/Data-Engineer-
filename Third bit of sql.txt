@@ -52,8 +52,7 @@ How does BigQuery/Snowflake handle SQL differently?
 How would you process billions of records?
 Most Important SQL Topics for Data Engineer
 
-Priority order:
-
+Priority order
 Joins
 Window Functions
 
